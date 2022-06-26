@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=" UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   /*
+        window.addEventListener('DOMcontentLoaded',()=>{    
+
+let tb1= document.querySelector("#tb1");
+tb1.addEventListener("blur",()=>{
+    let output = document.querySelector("#tb1").value;
+    consloe.log(output)
+    if(output != ""){
+        document.querySelector("#btn").disabled=false;
+    consloe.log("it working on buton enable")
+    }
+});
+let bt1=document.querySelector("#btn");
+bt1.addEventListener("click",()=>{
+    var output1 = document.querySelector("#tb1").value; 
+ document.querySelector("#wh").innerText = output1.toUppercase();   
+});
+});  
+        */
+        
+  
+
+    
+        window.addEventListener("DOMContentLoaded",()=>{
+
+            console.log("Its working..")
+            const tb = document.getElementById("tb")
+            tb.addEventListener("blur",()=>{
+                let Textt = tb.value;
+                document.getElementById("btn").disabled = false;
+                document.querySelector("#wh").innerText = Textt.toUpperCase();
+                
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <input type="text" name="" id="tb"  placeholder="type here">
+<span id="wh"></span><br><br>
+<button id="btn" disabled>Make Capital</button>
+</body>
+</html>
